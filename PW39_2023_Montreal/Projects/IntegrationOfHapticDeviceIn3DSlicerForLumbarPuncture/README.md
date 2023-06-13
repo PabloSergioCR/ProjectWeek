@@ -51,14 +51,38 @@ The main objective of the project is to integrate the haptic device Touch 3D Sys
 
 ## Progress and Next Steps
 
+The integration is already done and the application works following these steps:
+
+1. Create a 3d model of a real patient back from medical images.
+
+![Screenshot (33)](https://github.com/NA-MIC/ProjectWeek/assets/117910171/3fa8f216-1171-4d27-9d61-23ade7299d82)
+
+2. Creates marks on body tissues you want to feel. (Using MarkUps module)
+
+![Screenshot (34)](https://github.com/NA-MIC/ProjectWeek/assets/117910171/6a9bb16c-6cd3-4eb9-9547-bdcf473de004)
+
+3. Add that points to the SlicerToTouch module we made. You have to add position and resistance force value.
+
+![Screenshot (35)](https://github.com/NA-MIC/ProjectWeek/assets/117910171/c523e308-bf7a-4e08-9134-bd101ca58434)
+
+4. This information is saved in a json file.
+
+![configfile](https://github.com/NA-MIC/ProjectWeek/assets/117910171/e38c89cb-87ce-4507-9458-5721c6e4106b)
+
+5. Open the SlicerToTouch app we created using Unity. This app read automaticlly the json file and creates a scene with the haptic materials. At the same time, it connetcs with slicer sending the haptic device transform so you can see a needle moving in the slicer scene.
+
+![Screenshot (38)](https://github.com/NA-MIC/ProjectWeek/assets/117910171/60be1af0-1ce9-4b2e-84b9-708342a9d283)
+
+
 <!-- Update this section as you make progress, describing of what you have ACTUALLY DONE.
      If there are specific steps that you could not complete then you can describe them here, too. -->
 
-1.  Creation of the 3D Slicer module with fields to enter the number of resistances, positions and values. (DONE)
-2.  Generate a .json file with all the information entered in the module. (DONE)
-3.  Create a Unity project that reads the generated .json file and creates a scene with the resistances in that position and with those values. (DONE)
-4.  Connect Unity to 3D Slicer through OpenIGTLink. We are working on this step we are working on this step based on a NAMIC project link by Alicia Pose.
 
+Next steps: 
+
+1. Integrate Hololens 2 to watch the 3d slicer scene.
+
+   
 # Illustrations
 
 <!-- Add pictures and links to videos that demonstrate what has been accomplished. -->
