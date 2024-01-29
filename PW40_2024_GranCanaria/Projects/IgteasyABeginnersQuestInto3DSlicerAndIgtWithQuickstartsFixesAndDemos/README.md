@@ -32,7 +32,14 @@ key_investigators:
 - name: David García Mato
   affiliation: Apolo AI
   country: Spain
+  
+- name: Marie Ndiaye
+  affiliation: Université Assane Seck de Ziguinchor
+  country: Senegal
 
+- name: Fatimetou Mohamed-Saleck
+  affiliation: University of Nouakchott and University of Las Palmas Gran Canaria
+  country: Mauritania
 ---
 
 # Project Description
